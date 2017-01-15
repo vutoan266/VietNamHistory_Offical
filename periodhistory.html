@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
+<title>LỊCH SỬ VIỆT NAM</title>
+<link rel="icon" href="images/logo_icon.png">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
@@ -18,6 +19,7 @@
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <!-- Bootstrap link  end-->
 <!-- CSS stylesheet -->
+<link rel="stylesheet" href="css/material.indigo-pink.min.css" media="screen" title="no title">
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="all" />
 <link rel="stylesheet" href="css/loading.css" type="text/css" media="all" />
@@ -25,7 +27,7 @@
 <link rel="stylesheet" href="css/input/normalize.css" type="text/css" media="all" />
 <link rel="stylesheet" href="css/input/set1.css" type="text/css" media="all" />
 <link rel="stylesheet" href="css/map.css" media="screen" title="no title">
-<link rel="stylesheet" href="http://storage.googleapis.com/code.getmdl.io/1.0.5/material.indigo-pink.min.css" media="screen" title="no title">
+
 <!-- Google fonts link start-->
 <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900,600italic" rel="stylesheet" type="text/css">
 <!-- Google fonts ends -->
@@ -73,7 +75,56 @@
             console.log(currentPos);
             switch (currentPos) {
                 case '1':
-                    content = 'test';
+                    content = 'Trong buổi bình minh của lịch sử, Việt Nam là một trong những quê hương của loài người. Người ta đã phát hiện thấy người vượn ở Bình-Gia (Lạng Sơn), nhiều công cụ thuộc buổi đầu thời kỳ đồ đá cũ ở núi Đọ, núi Quan Yên (Thanh Hoá)...';
+                    title_popup.innerText = 'VN thời nguyên thủy';
+                    break;
+                case '2':
+                    content = 'Văn Lang là nhà nước đầu tiên của Việt Nam trong lịch sử. Nhà nước Văn Lang được cai trị bởi các vua Hùng. Âu Lạc là nhà nước được thành lập bởi Thục Phán năm 214 TCN, nhà nước này đã thống nhất 2 bộ tộc Âu Việt- Lạc Việt lại với nhau';
+                    title_popup.innerText = 'Văn Lang - Âu Lạc';
+                    break;
+                case '3':
+                    content = 'Trong thời gian này Việt Nam bị đặt dưới quyền cai trị của các triều đình của phương Bắc như: Bắc thuộc lần thứ nhất (179 TCN hoặc 111 TCN - 39), Bắc thuộc lần thứ hai (43 - 541), Bắc thuộc lần thứ ba (602 - 905[1]), Bắc thuộc lần thứ tư (1407 - 1427)';
+                    title_popup.innerText = 'Bắc thuộc';
+                    break;
+                case '4':
+                    content = 'Khởi đầu kỷ nguyên độc lập, trải qua 3 triều Ngô (939 - 968), Đinh (968 - 981), Tiền Lê (981 - 1009), nhân dân Việt tiếp tục đấu tranh chống xu hướng cát cứ 12 sứ quân, bảo vệ sự thống nhất và chống quân xâm lược Tống (981), giữ vững nền độc lập.';
+                    title_popup.innerText = 'Các triều đại Ngô - Đinh - Tiền Lê';
+                    break;
+                case '5':
+                    content = 'Nhà Lý hoặc Lý triều, bắt đầu khi Lý Công Uẩn lên ngôi vào tháng 10 âm lịch năm 1009, sau khi giành được quyền lực từ tay nhà Tiền Lê. Triều đại này trải qua 9 vị hoàng đế và chấm dứt khi Lý Chiêu Hoàng, lúc đó mới có 7 tuổi.';
+                    title_popup.innerText = 'Nhà Lý';
+                    break;
+                case '6':
+                    content = 'Nhà Trần hoặc Trần triều là triều đại quân chủ chuyên chế trong lịch sử Việt Nam, bắt đầu khi Trần Cảnh lên ngôi vào năm 1225, sau khi được Lý Chiêu Hoàng truyền ngôi.';
+                    title_popup.innerText = 'Nhà Trần';
+                    break;
+                case '7':
+                    content = 'Nhà Hồ bắt đầu khi Hồ Quý Ly lên ngôi năm 1400 sau khi giành được quyền lực từ tay nhà Trần và chấm dứt khi Hồ Hán Thương bị quân Minh bắt vào năm 1407 – tổng cộng là 7 năm. Quốc hiệu Đại Việt đã đổi thành Đại Ngu năm 1400.';
+                    title_popup.innerText = 'Nhà Hồ';
+                    break;
+                case '8':
+                    content = 'Nhà Hậu Lê (1427-1789) tồn tại sau thời Bắc thuộc lần 4 và đồng thời với nhà Mạc, nhà Tây Sơn trong một thời gian, trước nhà Nguyễn. Nhà Hậu Lê do Lê Thái Tổ lập ra, được phân biệt với nhà Tiền Lê (980-1009) do Lê Đại Hành lập ra cuối thế kỷ 10.';
+                    title_popup.innerText = 'Hậu Lê';
+                    break;
+                case '9':
+                    content = 'Nhà Tây Sơn (chữ Nôm: 家西山, chữ Hán: 西山朝 / Tây Sơn triều) là triều đại tồn tại từ 1778 đến 1802, được thành lập trong bối cảnh tranh chấp quyền lực cuối thời Hậu Lê trong lịch sử Việt Nam.'
+                    title_popup.innerText = 'Nhà Tây Sơn';
+                    break;
+                case '10':
+                    content = 'Nhà Nguyễn là triều đại cuối cùng trong lịch sử Việt Nam, Nhà Nguyễn được thành lập sau khi vua Gia Long lên ngôi năm 1802 và chấm dứt hoàn toàn khi hoàng đế Bảo Đại thoái vị vào năm 1945, tổng cộng là 143 năm.';
+                    title_popup.innerText = 'Nhà Nguyễn';
+                    break;
+                case '11':
+                    content = 'Pháp thuộc là một giai đoạn kéo dài 61 năm, bắt đầu từ 1884 khi Pháp ép triều đình Huế chấp nhận sự bảo hộ của Pháp cho đến 1945 khi Pháp mất quyền cai trị ở Đông Dương...';
+                    title_popup.innerText = 'Thời Pháp thuộc';
+                    break;
+                case '12':
+                    content = 'Cuộc kháng chiến của nhân dân VN chống đế quốc Mỹ xâm lược tiếp sau thắng lợi của Kháng chiến chống Pháp (1945-54) để giải phóng miền Nam, bảo vệ miền Bắc, thống nhất đất nước, hoàn thành cách mạng dân tộc dân chủ nhân dân trên cả nước. ';
+                    title_popup.innerText = 'VN những năm 1954-1975';
+                    break;
+                case '13':
+                    content = 'Cuộc kháng chiến chống Mĩ cứu nước (1954 – 1975) kết thúc thắng lợi, hoà bình được lập lại, đất nước độc lập thống nhất về mặt lãnh thổ, cả nước đi lên chủ nghĩa xã hội.';
+                    title_popup.innerText = 'VN ngày nay';
                     break;
                 default:
                     content = currentPos;
@@ -111,8 +162,8 @@
             <ul class="nav " id="nav ">
                 <li><a href="index.html " class="scroll ">Trang chủ</a></li>
                 <li><a href="dateofhistory.html " class="scroll ">Ngày này năm xưa</a></li>
-                <li><a href="periodhistory.html " class="scroll ">Niên biểu lịch sử Việt Nam</a></li>
-                <li class="current "><a href="listpost.html " class="scroll ">Bài viết lịch sử</a></li>
+                <li class="current"><a href="periodhistory.html " class="scroll ">Niên biểu lịch sử Việt Nam</a></li>
+                <li><a href="listpost.html " class="scroll ">Bài viết lịch sử</a></li>
                 <li><a href="listvideo.html " class="scroll ">Video lịch sử</a></li>
                 <li><a href="sentence.html " class="scroll ">Danh ngôn lịch sử</a></li>
                 <li><a href="about.html " class="scroll ">About</a></li>
@@ -120,22 +171,25 @@
             <input class="input__field input__field--kyo " type="text " id="input-19 " placeholder="Tìm kiếm " />
         </div>
         <!-- Header ends here -->
+        <div class="testimonals ">
+            <a href="periodhistory.html "><h3>Home>Niên biểu lịch sử</h3></a>
+        </div>
 
         <div class="container">
             <div class="image-head-master">
                 <img style="margin-left: 82px;margin-top: 4px;" class="image-head" src="image/2.png" alt="2">
-                <img style="margin-left: 146px;margin-top: -6px;" class="image-head" src="image/1.png" alt="1">
-                <img style="margin-left: 132px;margin-top: 29px;" class="image-head" src="image/3.png" alt="3">
-                <img style="margin-left: 113px;margin-top: 62px;" class="image-head" src="image/4.png" alt="4">
-                <img style="margin-left: 144px;margin-top: 122px;" class="image-head" src="image/5.png" alt="5">
-                <img style="margin-left: 188px;margin-top: 175px;" class="image-head" src="image/6.png" alt="6">
-                <img style="margin-left: 250px;margin-top: 177px;" class="image-head" src="image/7.png" alt="7">
-                <img style="margin-left: 260px;margin-top: 286px;" class="image-head" src="image/9.png" alt="9">
-                <img style="margin-left: 194px;margin-top: 219px;" class="image-head" src="image/8.png" alt="8">
-                <img style="margin-left: 191px;margin-top: 272px;" class="image-head" src="image/10.png" alt="10">
-                <img style="margin-left: 144px;margin-top: 300px;" class="image-head" src="image/11.png" alt="11">
-                <img style="margin-left: 102px;margin-top: 335px;" class="image-head" src="image/12.png" alt="12">
-                <img style="margin-left: 53px;margin-top: 327px;" class="image-head" src="image/13.png" alt="13">
+                <img style="margin-left: 168px;margin-top: -8px;" class="image-head" src="image/1.png" alt="1">
+                <img style="margin-left: 150px;margin-top: 39px;" class="image-head" src="image/3.png" alt="3">
+                <img style="margin-left: 123px;margin-top: 81px;" class="image-head" src="image/4.png" alt="4">
+                <img style="margin-left: 164px;margin-top: 157px;" class="image-head" src="image/5.png" alt="5">
+                <img style="margin-left: 223px;margin-top: 226px;" class="image-head" src="image/6.png" alt="6">
+                <img style="margin-left: 322px;margin-top: 177px;" class="image-head" src="image/7.png" alt="7">
+                <img style="margin-left: 338px;margin-top: 348px;" class="image-head" src="image/9.png" alt="9">
+                <img style="margin-left: 231px;margin-top: 284px;" class="image-head" src="image/8.png" alt="8">
+                <img style="margin-left: 227px;margin-top: 352px;" class="image-head" src="image/10.png" alt="10">
+                <img style="margin-left: 165px;margin-top: 390px;" class="image-head" src="image/11.png" alt="11">
+                <img style="margin-left: 110px;margin-top: 435px;" class="image-head" src="image/12.png" alt="12">
+                <img style="margin-left: 53px;margin-top: 416px;" class="image-head" src="image/13.png" alt="13">
             </div>
         </div>
 
@@ -143,7 +197,7 @@
         <div class="fab">
             <form class="cntt-wrapper">
                 <div id="fab-hdr">
-                    <h3>Popup</h3>
+                    <h3 id="title_popup">pop</h3>
                 </div>
 
                 <div class="cntt">
@@ -153,17 +207,16 @@
                 </div>
 
                 <div class="btn-wrapper">
-                    <button class="mdl-button mdl-js-button" id="cancel">Cancel</button>
-                    <button class="mdl-button mdl-js-button mdl-button--primary" id="submit">Submit</button>
+                    <button class="mdl-button mdl-js-button" id="cancel">Đóng</button>
+                    <button class="mdl-button mdl-js-button mdl-button--primary" id="submit"><a href='detail_periodhistory.html'>Chi tiết</a></button>
                 </div>
 
             </form>
         </div>
 
         <!-- Contents ends here -->
-
         <!-- Footer starts here-->
-        <div class="footer " style="position: absolute;right: 0;bottom: -216px;left: 0;">
+        <div class="footer " style="position: absolute;right: 0;bottom: -300px;left: 0;">
             <div class="container ">
                 <div class="row footer-row ">
                     <div class="col-md-6 footer-row-left ">
@@ -171,8 +224,8 @@
                             <ul>
                                 <li><a href="index.html ">Trang chủ</a></li>
                                 <li><a href="dateofhistory.html ">Ngày này năm xưa</a></li>
-                                <li><a href="periodhistory.html ">Niên biểu LSVN</a></li>
-                                <li class="active "><a href="listpost.html ">Bài viết</a></li>
+                                <li class="active"><a href="periodhistory.html ">Niên biểu LSVN</a></li>
+                                <li><a href="listpost.html ">Bài viết</a></li>
                                 <li><a href="listvideo.html ">Video</a></li>
                                 <li><a href="sentence.html ">Danh ngôn</a></li>
                                 <li><a href="about.html ">About</a></li>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/splash.css" />
+        <link rel="stylesheet" href="css/animate.min.css" />
+        <script src="js/jquery.min.js"></script>
+
+        <script type="text/javascript">
+            $('#splash').ready()
+            {
+                $('#main').load('index.html');
+                setTimeout(function() {
+                    $('#main').ready(function() {
+                        $('#splash').remove();
+                        window.location.href = "index.html";
+                    });
+                }, 4000);
+            }
+        </script>
+
+    </head>
+    <body>
+        <h1 class="abc animated rotateInUpRight" align="center">LỊCH SỬ VIỆT NAM</h1>
+
+        <div class="logo">
+          <img class="animated infinite pulse" src="images/logo0.png"/>
+        </div>
+        <div class="axa">
+          <h2 class="animated rollIn" align="center">"Dân ta phải biết sử ta</h2>
+          <h2 class="animated rollIn" align="center">cho tường gốc tích nước nhà Việt Nam"</h2>
+        </div>
+    </body>
+</html>

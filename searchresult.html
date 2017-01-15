@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+</style>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<!-- Bootstrap link  end-->
+<!-- CSS stylesheet -->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/loading.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/input/demo.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/input/normalize.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/input/set1.css" type="text/css" media="all" />
+<!-- Google fonts link start-->
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900,600italic' rel='stylesheet' type='text/css'>
+<!-- Google fonts ends -->
+<script src="js/jquery.min.js"></script>
+<!-- FlexSlider -->
+<script defer src="js/jquery.flexslider.js"></script>
+<script src="js/modernizr.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  var toggle = false;
+  $(window).click(function() {
+    var selectorToggleMenu = $('.slide-menu');
+    if(toggle){
+
+      selectorToggleMenu.addClass('animation-left');
+      $('body').removeClass('disabled-scroll');
+
+      setTimeout(function(){
+        selectorToggleMenu.addClass('hide-slide');
+        selectorToggleMenu.removeClass('animation-left');
+      }, 1000)
+
+    }
+  });
+
+  $('.toggleMenu').on('click',function(){
+    var selectorToggleMenu = $('.slide-menu');
+    if(selectorToggleMenu.hasClass('hide-slide')){
+      selectorToggleMenu.removeClass('hide-slide');
+      selectorToggleMenu.addClass('animation-right');
+      $('body').addClass('disabled-scroll');
+      toggle = true;
+      return false;
+    }
+  });
+
+  $('.slide-menu').click(function(event){
+      event.stopPropagation();
+  });
+
+});
+</script>
+
+<!-- <body class="w3-light-grey"> -->
+
+<div class="w3-content" style="max-width:1400px">
+
+  <!-- Header starts here -->
+    <div class="header">
+      <div class="container">
+        <div class="logo">
+          <a href="index.html"><img src="images/logo.png" /></a>
+        </div>
+         <div class="menu">
+          <a class="toggleMenu" href="#"><img src="images/nav_icon.png" alt="" /> </a>
+           </div>
+      </div>
+    </div>
+
+    <div class="slide-menu hide-slide">
+      <ul class="nav" id="nav">
+        <li class="current"><a href="index.html" class="scroll">Trang chủ</a></li>
+        <li><a href="dateofhistory.html" class="scroll">Ngày này năm xưa</a></li>
+        <li><a href="periodhistory.html" class="scroll">Niên biểu lịch sử Việt Nam</a></li>
+        <li><a href="listpost.html" class="scroll">Bài viết lịch sử</a></li>
+        <li><a href="listvideo.html" class="scroll">Video lịch sử</a></li>
+        <li><a href="sentence.html" class="scroll">Danh ngôn lịch sử</a></li>
+        <li><a href="about.html" class="scroll">About</a></li>
+       </ul>
+       <input class="input__field input__field--kyo" type="text" id="input-19" placeholder="Tìm kiếm"/>
+    </div>
+  <!-- Header ends here -->
+	<!-- Contents start here -->
+  <!-- search field -->
+  <section style="margin:10px;margin-top:20px;margin-bottom:0px;" class="content bgcolor-3">
+    <span class="input input--kyo">
+      <input class="input__field input__field--kyo" type="text" id="input-19" placeholder="Danh nhân, sự kiện..."/>
+      <label class="input__label input__label--kyo" for="input-19">
+        <center><a href="searchresult.html" class="input__label-content input__label-content--kyo" style="background:none"><img src="images/search.png"></img></a></center>
+      </label>
+    </span>
+  </section>
+	<br/>
+  <div class="w3-card-4 w3-margin w3-white">
+    <div class="w3-container w3-padding-8">
+      <h4>Kết quả tìm kiếm :</h4>
+      <h3><b>Chiến thắng</b></h3>
+      <h5>Bài viết : 1 - Video : 2 </h5>
+    </div>
+  </div>
+
+
+	<div class="w3-col l4">
+		<!-- Posts -->
+    <div class="w3-card-2 w3-margin">
+			<div class="w3-container w3-padding">
+				<h4>Bài viết</h4>
+			</div>
+			<ul class="w3-ul w3-hoverable w3-white">
+				<li class="w3-padding-16">
+					<img src="images/vonguyengiap.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+					<span class="w3-large">CHIẾN THẮNG ĐIỆN BIÊN PHỦ 1954</span><br>
+					<span>- 15:20 2/1/2017 -</span>
+				</li>
+
+			</ul>
+		</div>
+    <!-- video -->
+		<div class="w3-card-2 w3-margin">
+			<div class="w3-container w3-padding">
+				<h4>Video</h4>
+			</div>
+			<ul class="w3-ul w3-hoverable w3-white">
+				<li class="w3-padding-16">
+					<img src="images/dbp2.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+					<span class="w3-large">CLIP TÓM TẮT LỊCH SỬ VIỆT NAM</span><br>
+					<span>- 15:20 2/1/2017 -</span>
+				</li>
+				<li class="w3-padding-16">
+					<img src="images/NguyenTrungTruc_1.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+					<span class="w3-large">NHỮNG VỤ ÁM SÁT CHẤN ĐỘNG LSVN</span><br>
+					<span>- 1:29 -30/12/2016 -</span>
+				</li>
+				</li>
+			</ul>
+		</div>
+
+
+
+		<!-- Contents ends here -->
+
+<!-- Footer starts here-->
+<div class="footer">
+  <div class="container">
+    <div class="row footer-row">
+      <div class="col-md-6 footer-row-left">
+        <div class="footer-menu">
+          <ul>
+            <li  class="active"><a href="index.html">Trang chủ</a></li>
+            <li><a href="dateofhistory.html">Ngày này năm xưa</a></li>
+            <li><a href="periodhistory.html">Niên biểu LSVN</a></li>
+            <li><a href="listpost.html">Bài viết</a></li>
+            <li><a href="listvideo.html">Video</a></li>
+            <li><a href="sentence.html">Danh ngôn</a></li>
+            <li><a href="about.html">About</a></li>
+
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-3 footer-row-left">
+        <div class="social-media">
+          <a href="#"><i class="fa1"> </i></a>
+          <a href="#"><i class="fa2"> </i></a>
+          <a href="#"><i class="fa3"> </i></a>
+          <a href="#"><i class="fa4"> </i></a>
+          <a href="#"><i class="fa5"> </i></a>
+        </div>
+      </div>
+      <div class="col-md-3 footer-row-left">
+        <div class="email-info">
+          <input type="text"size="25px" value="vutoan266@gmail.com"  onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'info@companyname.com';}" style="margin-left: 10px" >
+        </div>
+      </div>
+
+      <div class="clearfix"></div>
+    </div>
+     <p class="footer-row-para">2016 &copy; A product of <a href="fb.com/vutoan266">imVutoan</a></p>
+  </div>
+</div>
+<!-- Footer ends here-->
+
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+</style>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<!-- Bootstrap link  end-->
+<!-- CSS stylesheet -->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/loading.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/input/demo.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/input/normalize.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/input/set1.css" type="text/css" media="all" />
+<!-- Google fonts link start-->
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900,600italic' rel='stylesheet' type='text/css'>
+<!-- Google fonts ends -->
+<script src="js/jquery.min.js"></script>
+<!-- FlexSlider -->
+<script defer src="js/jquery.flexslider.js"></script>
+<script src="js/modernizr.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  var toggle = false;
+  $(window).click(function() {
+    var selectorToggleMenu = $('.slide-menu');
+    if(toggle){
+
+      selectorToggleMenu.addClass('animation-left');
+      $('body').removeClass('disabled-scroll');
+
+      setTimeout(function(){
+        selectorToggleMenu.addClass('hide-slide');
+        selectorToggleMenu.removeClass('animation-left');
+      }, 1000)
+
+    }
+  });
+
+  $('.toggleMenu').on('click',function(){
+    var selectorToggleMenu = $('.slide-menu');
+    if(selectorToggleMenu.hasClass('hide-slide')){
+      selectorToggleMenu.removeClass('hide-slide');
+      selectorToggleMenu.addClass('animation-right');
+      $('body').addClass('disabled-scroll');
+      toggle = true;
+      return false;
+    }
+  });
+
+  $('.slide-menu').click(function(event){
+      event.stopPropagation();
+  });
+
+});
+</script>
+
+<!-- <body class="w3-light-grey"> -->
+
+<div class="w3-content" style="max-width:1400px">
+
+  <!-- Header starts here -->
+    <div class="header">
+      <div class="container">
+        <div class="logo">
+          <a href="index.html"><img src="images/logo.png" /></a>
+        </div>
+         <div class="menu">
+          <a class="toggleMenu" href="#"><img src="images/nav_icon.png" alt="" /> </a>
+           </div>
+      </div>
+    </div>
+
+    <div class="slide-menu hide-slide">
+      <ul class="nav" id="nav">
+        <li><a href="index.html" class="scroll">Trang chủ</a></li>
+        <li><a href="dateofhistory.html" class="scroll">Ngày này năm xưa</a></li>
+        <li><a href="periodhistory.html" class="scroll">Niên biểu lịch sử Việt Nam</a></li>
+        <li class="current"><a href="listpost.html" class="scroll">Bài viết lịch sử</a></li>
+        <li><a href="listvideo.html" class="scroll">Video lịch sử</a></li>
+        <li><a href="sentence.html" class="scroll">Danh ngôn lịch sử</a></li>
+        <li><a href="about.html" class="scroll">About</a></li>
+       </ul>
+       <input class="input__field input__field--kyo" type="text" id="input-19" placeholder="Tìm kiếm"/>
+    </div>
+  <!-- Header ends here -->
+  <div class="testimonals">
+    <img src="images/newpost.png"></img>
+    <a href="listpost.html"><h3>Bài Viết</h3></a>
+  </div>
+
+	<!-- Contents start here -->
+	<br/>
+	<div class="w3-card-4 w3-margin w3-white">
+		<div class="w3-container w3-padding-8">
+			<h3><b>Chiến thắng Điện Biên Phủ 7/5/1954.</b></h3>
+			<h5>Bài viết lịch sử, <span class="w3-opacity">20:35 2/1/2017</span></h5>
+		</div>
+	</div>
+	<div class="col-md-6 content-class3-column">
+		<div class="row class3-row">
+			<div class="col-md-6 class3-row-column">
+				<img src="images/dienbienphu.jpg" />
+			</div>
+			<div class="col-md-6 class3-row-column">
+				<br/>
+				<h4>Ngay sau khi Cách mạng tháng Tám thắng lợi, thực dân Pháp được sự hỗ trợ của các thế lực đế quốc đã quay trở lại xâm lược nước ta. Ngày 19/12/1946, đáp lời Lời kêu gọi toàn quốc kháng chiến của Hồ Chủ tịch, nhân dân Việt Nam đã anh dũng bước vào cuộc kháng chiến trường kỳ, gian khổ chống kẻ thù xâm lược... </h4>
+				<h4>Khi xây dựng Điện Biên Phủ thành cứ điểm mạnh nhất Đông Dương 60 năm trước, thực dân Pháp tin chắc lòng chảo này sẽ nghiền nát Việt Minh. Nhưng quân đội Việt Minh, từ thế yếu đánh thế mạnh, giành chiến thắng lừng lẫy năm châu, chấn động địa cầu. </h4>
+				<br/>
+				<img src="images/dbp.jpg"></img>
+				<br/>
+				<h4>Đây là chiến thắng quân sự lớn nhất trong cuộc kháng chiến chống Pháp 1945 – 1954 của Việt Nam. Bằng thắng lợi quyết định này, lực lượng QĐNDVN do Đại tướng Võ Nguyên Giáp chỉ huy đã buộc quân Pháp tại Điện Biên Phủ phải đầu hàng vào tháng 5 năm 1954, sau suốt 2 tháng chịu trận. </h4>
+				<br/>
+				<img src="images/dbp1.jpg"></img>
+				<br/>
+				<h4>Giữa trận này, quân Pháp đã gia tăng lên đến 16.000 người nhưng vẫn không thể chống nổi các đợt tấn công của QĐNDVN. Thực dân Pháp đã không thể bình định Việt Nam bất chấp nhiều năm chiến đấu và sự hỗ trợ ngày càng gia tăng của Hoa Kỳ, và họ đã không còn khả năng để tiếp tục ứng chiến sau thảm bại này.</h4>
+				<br/>
+				<h5 style="margin-left:240px;">Nguồn : Internet</h5>
+				<br/>
+			</div>
+		</div>
+	</div>
+	<div class="content">
+		<div class="container">
+
+	<!-- nguon va cac bai viet lien quan -->
+	</div>
+	</div>
+	<!-- bai viet lien quan, tag -->
+	<!-- Introduction menu -->
+	<div class="w3-col l4">
+		<!-- Posts -->
+		<div class="w3-card-2 w3-margin">
+			<div class="w3-container w3-padding">
+				<h4>Bài viết liên quan</h4>
+			</div>
+			<ul class="w3-ul w3-hoverable w3-white">
+				<li class="w3-padding-16">
+					<img src="images/vonguyengiap.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+					<span class="w3-large">VÕ NGUYÊN GIÁP DƯỚI GÓC NHÌN CỦA NGƯỜI VIẾT SỬ</span><br>
+					<span>- 15:20 2/1/2017 -</span>
+				</li>
+				<li class="w3-padding-16">
+					<img src="images/haibatrung.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+					<span class="w3-large">NHỮNG PHỤ NỮ UY QUYỀN TRONG LỊCH SỬ VIỆT NAM</span><br>
+					<span>- 1:29 -30/12/2016 -</span>
+				</li>
+				</li>
+			</ul>
+		</div>
+
+		<hr>
+
+		<!-- Labels / tags -->
+		<div class="w3-card-2 w3-margin">
+			<div class="w3-container w3-padding">
+				<h4>Tags</h4>
+			</div>
+			<div class="w3-container w3-white">
+			<p><span class="w3-tag w3-black w3-margin-bottom">1954</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Điện Biên Phủ</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Pháp</span>
+				<span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Chiến thắng</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Võ Nguyên Giáp</span>
+			</p>
+			</div>
+		</div>
+		<!-- ket thuc bai viet lien quan, tag -->
+	<!-- Contents ends here -->
+
+<!-- Footer starts here-->
+<div class="footer">
+  <div class="container">
+    <div class="row footer-row">
+      <div class="col-md-6 footer-row-left">
+        <div class="footer-menu">
+          <ul>
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="dateofhistory.html">Ngày này năm xưa</a></li>
+            <li><a href="periodhistory.html">Niên biểu LSVN</a></li>
+            <li class="active"><a href="listpost.html">Bài viết</a></li>
+            <li><a href="listvideo.html">Video</a></li>
+            <li><a href="sentence.html">Danh ngôn</a></li>
+            <li><a href="about.html">About</a></li>
+
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-3 footer-row-left">
+        <div class="social-media">
+          <a href="#"><i class="fa1"> </i></a>
+          <a href="#"><i class="fa2"> </i></a>
+          <a href="#"><i class="fa3"> </i></a>
+          <a href="#"><i class="fa4"> </i></a>
+          <a href="#"><i class="fa5"> </i></a>
+        </div>
+      </div>
+      <div class="col-md-3 footer-row-left">
+        <div class="email-info">
+          <input type="text"size="25px" value="vutoan266@gmail.com"  onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'info@companyname.com';}" style="margin-left: 10px" >
+        </div>
+      </div>
+
+      <div class="clearfix"></div>
+    </div>
+     <p class="footer-row-para">2016 &copy; A product of <a href="fb.com/vutoan266">imVutoan</a></p>
+  </div>
+</div>
+<!-- Footer ends here-->
+
+</body>
+</html>

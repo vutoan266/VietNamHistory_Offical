@@ -1,0 +1,199 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Free Bizname Bootstrap Website Template | Home :: w3layouts</title>
+<!-- Bootstrap link -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<!-- Bootstrap link  end-->
+<!-- CSS stylesheet -->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/dateofhistory.css" type="text/css" media="all" />
+<link href='http://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" href="css/input/demo.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/input/normalize.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/input/set1.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+
+<!-- CSS stylesheet end-->
+ <!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+</script>
+<!-- Google fonts link start-->
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900,600italic' rel='stylesheet' type='text/css'>
+<!-- Google fonts ends -->
+<link href="css/datedropper.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery.min.js"></script>
+<!-- FlexSlider -->
+<script defer src="js/jquery.flexslider.js"></script>
+<script src="js/modernizr.js"></script>
+<script src="js/dateofhistory.js"></script>
+<script src="js/datedropper.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  var toggle = false;
+  $(window).click(function() {
+    var selectorToggleMenu = $('.slide-menu');
+    if(toggle){
+
+      selectorToggleMenu.addClass('animation-left');
+      $('body').removeClass('disabled-scroll');
+
+      setTimeout(function(){
+        selectorToggleMenu.addClass('hide-slide');
+        selectorToggleMenu.removeClass('animation-left');
+      }, 1000)
+
+    }
+  });
+
+  $('.toggleMenu').on('click',function(){
+    var selectorToggleMenu = $('.slide-menu');
+    if(selectorToggleMenu.hasClass('hide-slide')){
+      selectorToggleMenu.removeClass('hide-slide');
+      selectorToggleMenu.addClass('animation-right');
+      $('body').addClass('disabled-scroll');
+      toggle = true;
+      return false;
+    }
+  });
+
+  $('.slide-menu').click(function(event){
+      event.stopPropagation();
+  });
+
+});
+</script>
+
+
+
+</head>
+<body class="body-container">
+  <!-- Header starts here -->
+    <div class="header">
+      <div class="container">
+        <div class="logo">
+          <a href="index.html"><img src="images/logo.png" /></a>
+        </div>
+         <div class="menu">
+          <a class="toggleMenu" href="#"><img src="images/nav_icon.png" alt="" /> </a>
+           </div>
+      </div>
+    </div>
+    <div class="slide-menu hide-slide">
+      <ul class="nav" id="nav">
+        <li><a href="index.html" class="scroll">Trang chủ</a></li>
+        <li class="current"><a href="dateofhistory.html" class="scroll">Ngày này năm xưa</a></li>
+        <li><a href="periodhistory.html" class="scroll">Niên biểu lịch sử Việt Nam</a></li>
+        <li><a href="listpost.html" class="scroll">Bài viết lịch sử</a></li>
+        <li><a href="listvideo.html" class="scroll">Video lịch sử</a></li>
+        <li><a href="sentence.html" class="scroll">Danh ngôn lịch sử</a></li>
+        <li><a href="about.html" class="scroll">About</a></li>
+       </ul>
+    </div>
+  <!-- Header ends here -->
+		<!-- Contents start here -->
+    <div class="testimonals">
+      <img src="images/newpost.png"></img>
+      <a href="listpost.html"><h3>NGÀY NÀY NĂM XƯA</h3></a>
+    </div>
+    <div class="banner">
+      <div class="container">
+          <div class="slider-background">
+            <input type="text" data-format="d-m" data-default-date="01-14-2017"
+            class="input__field input__field--picker" style="font-size:35px;" type="text" id="input-19" />
+        </div>
+
+      </div>
+    </div>
+
+    <!-- timeline -->
+    <section id="cd-timeline" class="cd-container">
+
+      <div class="cd-timeline-block">
+  			<div class="cd-timeline-img cd-movie">
+  				<img src="images/yellowstar.png" alt="Movie">
+  			</div> <!-- cd-timeline-img -->
+
+  			<div class="cd-timeline-content">
+  				<h2>1950</h2>
+  				<p>Ngày đánh dấu sự thắng lợi của đường lối ngoại giao của Chính phủ Việt Nam dân chủ cộng hoà. Trong ngày này Chính phủ đã ra tuyên bố về đường lối ngoại giao.</p>
+  				<span class="cd-date">14/1/1950</span>
+  			</div> <!-- cd-timeline-content -->
+  		</div> <!-- cd-timeline-block -->
+
+  		<div class="cd-timeline-block">
+  			<div class="cd-timeline-img cd-movie">
+  				<img src="images/global.png" alt="Movie">
+  			</div> <!-- cd-timeline-img -->
+
+  			<div class="cd-timeline-content">
+  				<h2>1724</h2>
+  				<p>Quân chủ Tây Ban Nha đầu tiên thuộc vương tộc Bourbon là Felipe V nhượng lại vương vị cho con trai cả là Luis.</p>
+  				<span class="cd-date">14/1/1724</span>
+  			</div> <!-- cd-timeline-content -->
+  		</div> <!-- cd-timeline-block -->
+
+      <div class="cd-timeline-block">
+  			<div class="cd-timeline-img cd-movie">
+  				<img src="images/global.png" alt="Movie">
+  			</div> <!-- cd-timeline-img -->
+
+  			<div class="cd-timeline-content">
+  				<h2>1895</h2>
+  				<p>Thông qua hội nghị nội các, Nhật Bản tuyên bố quần đảo Senkaku là lãnh thổ vô chủ, chính thức nhập vào bản đồ Nhật Bản.</p>
+  				<span class="cd-date">14/1/1895</span>
+  			</div> <!-- cd-timeline-content -->
+  		</div> <!-- cd-timeline-block -->
+
+  	</section> <!-- cd-timeline -->
+		<!-- Contents ends here -->
+    <!-- Footer starts here-->
+		<div class="footer">
+			<div class="container">
+				<div class="row footer-row">
+          <div class="col-md-6 footer-row-left">
+						<div class="footer-menu">
+							<ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="dateofhistory.html">Ngày này năm xưa</a></li>
+                <li><a href="periodhistory.html">Niên biểu LSVN</a></li>
+                <li><a href="listpost.html">Bài viết</a></li>
+                <li><a href="listvideo.html">Video</a></li>
+                <li class="active"><a href="sentence.html">Danh ngôn</a></li>
+                <li><a href="about.html">About</a></li>
+
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-3 footer-row-left">
+						<div class="social-media">
+							<a href="#"><i class="fa1"> </i></a>
+							<a href="#"><i class="fa2"> </i></a>
+							<a href="#"><i class="fa3"> </i></a>
+							<a href="#"><i class="fa4"> </i></a>
+							<a href="#"><i class="fa5"> </i></a>
+						</div>
+					</div>
+					<div class="col-md-3 footer-row-left">
+						<div class="email-info">
+							<input type="text"size="25px" value="vutoan266@gmail.com"  onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'info@companyname.com';}" style="margin-left: 10px" >
+						</div>
+					</div>
+
+					<div class="clearfix"></div>
+				</div>
+				 <p class="footer-row-para">2016 &copy; A product of <a href="fb.com/vutoan266">imVutoan</a></p>
+			</div>
+		</div>
+		<!-- Footer ends here-->
+    <!-- init dateDropper -->
+    <script>
+    $('input').dateDropper();
+    </script>
+</body>
+</html>

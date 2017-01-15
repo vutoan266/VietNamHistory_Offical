@@ -1,0 +1,234 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Free Bizname Bootstrap Website Template | Home :: w3layouts</title>
+<!-- Bootstrap link -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<!-- Bootstrap link  end-->
+<!-- CSS stylesheet -->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/famoussentence.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/loading.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/input/demo.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/input/normalize.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/input/set1.css" type="text/css" media="all" />
+
+<!-- CSS stylesheet end-->
+ <!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+</script>
+<!-- Google fonts link start-->
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900,600italic' rel='stylesheet' type='text/css'>
+<!-- Google fonts ends -->
+<script src="js/jquery.min.js"></script>
+<!-- FlexSlider -->
+<script defer src="js/jquery.flexslider.js"></script>
+<script src="js/modernizr.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  var toggle = false;
+  $(window).click(function() {
+    var selectorToggleMenu = $('.slide-menu');
+    if(toggle){
+
+      selectorToggleMenu.addClass('animation-left');
+      $('body').removeClass('disabled-scroll');
+
+      setTimeout(function(){
+        selectorToggleMenu.addClass('hide-slide');
+        selectorToggleMenu.removeClass('animation-left');
+      }, 1000)
+
+    }
+  });
+
+  $('.toggleMenu').on('click',function(){
+    var selectorToggleMenu = $('.slide-menu');
+    if(selectorToggleMenu.hasClass('hide-slide')){
+      selectorToggleMenu.removeClass('hide-slide');
+      selectorToggleMenu.addClass('animation-right');
+      $('body').addClass('disabled-scroll');
+      toggle = true;
+      return false;
+    }
+  });
+
+  $('.slide-menu').click(function(event){
+      event.stopPropagation();
+  });
+
+});
+</script>
+</head>
+<body class="body-container">
+  <!-- Header starts here -->
+    <div class="header">
+      <div class="container">
+        <div class="logo">
+          <a href="index.html"><img src="images/logo.png" /></a>
+        </div>
+         <div class="menu">
+          <a class="toggleMenu" href="#"><img src="images/nav_icon.png" alt="" /> </a>
+           </div>
+      </div>
+    </div>
+    <div class="slide-menu hide-slide">
+      <ul class="nav" id="nav">
+        <li><a href="index.html" class="scroll">Trang chủ</a></li>
+        <li><a href="dateofhistory.html" class="scroll">Ngày này năm xưa</a></li>
+        <li><a href="periodhistory.html" class="scroll">Niên biểu lịch sử Việt Nam</a></li>
+        <li><a href="listpost.html" class="scroll">Bài viết lịch sử</a></li>
+        <li><a href="listvideo.html" class="scroll">Video lịch sử</a></li>
+        <li class="current"><a href="sentence.html" class="scroll">Danh ngôn lịch sử</a></li>
+        <li><a href="about.html" class="scroll">About</a></li>
+       </ul>
+       <input class="input__field input__field--kyo" type="text" id="input-19" placeholder="Tìm kiếm"/>
+    </div>
+  <!-- Header ends here -->
+  <div class="testimonals">
+    <img src="images/sentence.png"></img>
+    <a href="sentence.html"><h3>Danh Ngôn Lịch Sử</h3></a>
+  </div>
+    <div class="portfolio-start">
+       <div class="content-top" style="width:370px">
+        <div class="col_1_of_projects span_1_of_projects"><a href="#">
+           <div class="view view-fourth">
+                    <img src="images/sentence1.jpg" class="img-responsive" />
+                    <div class="mask">
+                        <h2>Nguyễn Trãi (1380 - 1442)</h2>
+                        <p>Việc nhân nghĩa cốt ở yên dân, quân điếu phạt trước lo trừ bạo.</p>
+                    </div>
+                </div>
+                </a> </div>
+         <div class="col_1_of_projects span_1_of_projects"><a href="#">
+           <div class="view view-fourth">
+                    <img src="images/sentence2.jpg" class="img-responsive" />
+                    <div class="mask">
+                        <h2>Hồ Chí Minh (1890 - 1969)</h2>
+                        <p>Nước Việt Nam là một, dân tộc Việt Nam là một. Sông có thể cạn, núi có thể mòn, song chân lý ấy không bao giờ thay đổi.</p>
+                    </div>
+                </div>
+                </a> </div>
+        <div class="col_1_of_projects span_1_of_projects"><a href="#">
+           <div class="view view-fourth">
+                    <img src="images/NguyenTrungTruc_1.jpg" class="img-responsive" />
+                    <div class="mask">
+                        <h2>Nguyễn Trung Trực (1837 - 1868)</h2>
+                        <p>Bao giờ người Tây nhổ hết cỏ nước Nam thì người Nam mới hết đánh Tây.</p>
+
+                    </div>
+                </div>
+                </a> </div>
+        <div class="col_1_of_projects span_1_of_projects"><a href="#">
+           <div class="view view-fourth">
+                    <img src="images/sentence4.jpg" class="img-responsive" />
+                    <div class="mask">
+                        <h2>Trần Quốc Toản (1267 - 1285)</h2>
+                        <p>Phá cường địch, báo hoàng ân</p>
+
+                    </div>
+                </div>
+                </a> </div>
+        <div class="clearfix"></div>
+        </div>
+        <div class="content-top" style="width:370px">
+        <div class="col_1_of_projects span_1_of_projects"><a href="#">
+           <div class="view view-fourth">
+                    <img src="images/sentence5.jpg" class="img-responsive" />
+                    <div class="mask">
+                        <h2>Trần Quốc Tuấn (1232 - 1300)</h2>
+                        <p>Nếu bệ hạ muốn hàng, xin hãy chém đầu thần trước đã</p>
+
+                    </div>
+                </div>
+                </a> </div>
+         <div class="col_1_of_projects span_1_of_projects"><a href="#">
+           <div class="view view-fourth">
+                    <img src="images/sentence6.jpg" class="img-responsive" />
+                    <div class="mask">
+                        <h2>Lý Thường Kiệt (1019 - 1105)</h2>
+                        <p>Nam quốc sơn hà Nam đế cư, tiệt nhiên định phận tại thiên thư. Như hà nghịch lỗ lai xâm phạm, nhữ đẳng hành khan thủ bại hư.</p>
+
+                    </div>
+                </div>
+                </a> </div>
+
+          </div>
+
+    </div>
+    <h3>`</h3>
+    <!-- sentence single -->
+      <div class="col-md-4 testimonals-row-column">
+        <div class="testimonals-details">
+          <p>"Nước Việt Nam là một, dân tộc Việt Nam là một; sông có thể cạn, núi có thể mòn, song chân lý ấy không bao giờ thay đổi."</p>
+        </div>
+        <p><span><a href="#">- Chủ tịch Hồ Chí Minh</a></span>. </p>
+      </div>
+      <div class="col-md-4 testimonals-row-column">
+        <div class="testimonals-details">
+          <p>"Nếu bệ hạ muốn hàng, xin hãy chém đầu thần trước đã"</p>
+        </div>
+        <p><span><a href="#">- Hưng đạo Đại Vương Trần Quốc Tuấn</a></span>. </p>
+      </div>
+      <div class="col-md-4 testimonals-row-column">
+        <div class="testimonals-details">
+          <p>"Nam quốc sơn hà Nam đế cư, tiệt nhiên định phận tại thiên thư. Như hà nghịch lỗ lai xâm phạm, nhữ đẳng hành khan thủ bại hư."</p>
+        </div>
+        <p><span><a href="#">- Lý Thường Kiệt</a></span>. </p>
+      </div>
+
+    <!-- loading -->
+    <center>
+      <div class="load-3">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </center>
+  <br/>
+
+    <!-- Aboutus ends here -->
+    <!-- Footer starts here-->
+		<div class="footer">
+			<div class="container">
+				<div class="row footer-row">
+          <div class="col-md-6 footer-row-left">
+						<div class="footer-menu">
+							<ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="dateofhistory.html">Ngày này năm xưa</a></li>
+                <li><a href="periodhistory.html">Niên biểu LSVN</a></li>
+                <li><a href="listpost.html">Bài viết</a></li>
+                <li><a href="listvideo.html">Video</a></li>
+                <li class="active"><a href="sentence.html">Danh ngôn</a></li>
+                <li><a href="about.html">About</a></li>
+
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-3 footer-row-left">
+						<div class="social-media">
+							<a href="#"><i class="fa1"> </i></a>
+							<a href="#"><i class="fa2"> </i></a>
+							<a href="#"><i class="fa3"> </i></a>
+							<a href="#"><i class="fa4"> </i></a>
+							<a href="#"><i class="fa5"> </i></a>
+						</div>
+					</div>
+					<div class="col-md-3 footer-row-left">
+						<div class="email-info">
+							<input type="text"size="25px" value="vutoan266@gmail.com"  onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'info@companyname.com';}" style="margin-left: 10px" >
+						</div>
+					</div>
+
+					<div class="clearfix"></div>
+				</div>
+				 <p class="footer-row-para">2016 &copy; A product of <a href="fb.com/vutoan266">imVutoan</a></p>
+			</div>
+		</div>
+		<!-- Footer ends here-->
+    </body>
+</html>

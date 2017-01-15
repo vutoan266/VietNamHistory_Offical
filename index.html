@@ -1,0 +1,226 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Free Bizname Bootstrap Website Template | Home :: w3layouts</title>
+<!-- Bootstrap link -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<!-- Bootstrap link  end-->
+<!-- CSS stylesheet -->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/input/demo.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/input/normalize.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/input/set1.css" type="text/css" media="all" />
+<!-- CSS stylesheet end-->
+ <!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+</script>
+<!-- Google fonts link start-->
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900,600italic' rel='stylesheet' type='text/css'>
+<!-- Google fonts ends -->
+<script src="js/jquery.min.js"></script>
+<!-- FlexSlider -->
+<script defer src="js/jquery.flexslider.js"></script>
+<script src="js/modernizr.js"></script>
+
+<script type="text/javascript">
+  $(window).load(function(){
+    $('.flexslider').flexslider({
+      animation: "slide",
+      start: function(slider){
+        $('body').removeClass('loading');
+      }
+    });
+  });
+$(document).ready(function(){
+  var toggle = false;
+  $(window).click(function() {
+    var selectorToggleMenu = $('.slide-menu');
+    if(toggle){
+
+      selectorToggleMenu.addClass('animation-left');
+      $('body').removeClass('disabled-scroll');
+
+      setTimeout(function(){
+        selectorToggleMenu.addClass('hide-slide');
+        selectorToggleMenu.removeClass('animation-left');
+      }, 1000)
+
+    }
+  });
+
+  $('.toggleMenu').on('click',function(){
+    var selectorToggleMenu = $('.slide-menu');
+    if(selectorToggleMenu.hasClass('hide-slide')){
+      selectorToggleMenu.removeClass('hide-slide');
+      selectorToggleMenu.addClass('animation-right');
+      $('body').addClass('disabled-scroll');
+      toggle = true;
+      return false;
+    }
+  });
+
+  $('.slide-menu').click(function(event){
+      event.stopPropagation();
+  });
+
+});
+</script>
+
+</head>
+<body class="body-container">
+		<!-- Header starts here -->
+			<div class="header">
+				<div class="container">
+					<div class="logo">
+						<a href="index.html"><img src="images/logo.png" /></a>
+					</div>
+					 <div class="menu">
+						<a class="toggleMenu" href="#"><img src="images/nav_icon.png" alt="" /> </a>
+				     </div>
+				</div>
+			</div>
+      <div class="slide-menu hide-slide">
+        <ul class="nav" id="nav">
+          <li class="current"><a href="index.html" class="scroll">Trang chủ</a></li>
+          <li><a href="dateofhistory.html" class="scroll">Ngày này năm xưa</a></li>
+          <li><a href="periodhistory.html" class="scroll">Niên biểu lịch sử Việt Nam</a></li>
+          <li><a href="listpost.html" class="scroll">Bài viết lịch sử</a></li>
+          <li><a href="listvideo.html" class="scroll">Video lịch sử</a></li>
+          <li><a href="sentence.html" class="scroll">Danh ngôn lịch sử</a></li>
+          <li><a href="about.html" class="scroll">About</a></li>
+         </ul>
+         <input class="input__field input__field--kyo" type="text" id="input-19" placeholder="Tìm kiếm"/>
+
+      </div>
+		<!-- Header ends here -->
+		<!-- Banner starts here -->
+
+				<div class="container">
+						<div class="slider-background">
+						<section class="slider">
+					        <div class="flexslider">
+					          <ul class="slides">
+					  	    		<li>
+					  	    	    <img src="images/banner.jpg"  alt=""/>
+					  	    		</li>
+					  	    		<li>
+					  	    	    <img src="images/banner2.jpg"  alt=""/>
+					  	    		</li>
+					  	    		<li>
+					  	    	    <img src="images/banner3.jpg"  alt=""/>
+					  	    		</li>
+					          </ul>
+					        </div>
+					      </section>
+					      <div class="banner-below-content">
+					      	<h2>* <span>Ngày 14 tháng 1 năm 1950</span> *</h2>
+					      	<p>Ngày đánh dấu sự thắng lợi của đường lối ngoại giao của Chính phủ Việt Nam dân chủ cộng hoà. Trong ngày này Chính phủ đã ra tuyên bố về đường lối ngoại giao.</p>
+					      	<a href="dateofhistory.html" style=""><i>Thêm</i></a>
+					      </div>
+					</div>
+				</div>
+
+
+		<!-- Contents start here -->
+			<div class="content">
+				<div class="container">
+					<div class="row content-row-class">
+            <!-- search field -->
+          <section class="content bgcolor-3">
+    				<span class="input input--kyo">
+    					<input class="input__field input__field--kyo" type="text" id="input-19" placeholder="Danh nhân, sự kiện..."/>
+    					<label class="input__label input__label--kyo" for="input-19">
+                <center><a href="searchresult.html" class="input__label-content input__label-content--kyo" style="background:none"><img src="images/search.png"></img></a></center>
+    					</label>
+    				</span>
+    			</section>
+          </div>
+          <!-- post field -->
+          <div class="testimonals">
+            <img src="images/newpost.png"></img>
+						<a href="listpost.html"><h3>Bài Viết Mới</h3></a>
+					</div>
+					<div class="row content-row-class3">
+						<div class="col-md-6 content-class3-column">
+							<div class="row class3-row">
+								<div class="col-md-6 class3-row-column">
+									<img src="images/dienbienphu.jpg" />
+								</div>
+								<div class="col-md-6 class3-row-column">
+									<h3>Chiến thắng Điện Biên Phủ 7/5/1954.</h3>
+									<p>Ngay sau khi Cách mạng tháng Tám thắng lợi, thực dân Pháp được sự hỗ trợ của các thế lực đế quốc đã quay trở lại xâm lược nước ta. Ngày 19/12/1946, đáp lời Lời kêu gọi toàn quốc kháng chiến của Hồ Chủ tịch, nhân dân Việt Nam đã anh dũng bước vào cuộc kháng chiến trường kỳ, gian khổ chống kẻ thù xâm lược... </p>
+									<a href="readpost.html">Thêm</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 content-class3-column">
+							<div class="row class3-row">
+								<div class="col-md-6 class3-row-column">
+									<img src="images/tranthanhtong.jpg" />
+								</div>
+								<div class="col-md-6 class3-row-column">
+									<h3>Vua Trần Thánh Tông</h3>
+									<p>Trần Thánh Tông (chữ Hán: 陳聖宗; 12 tháng 10 năm 1240[1] – 3 tháng 7 năm 1290) là vị hoàng đế thứ hai của nhà Trần trong lịch sử Việt Nam, ở ngôi từ tháng 3 năm 1258 đến tháng 11 năm 1278. Sau đó, ông làm Thái thượng hoàng từ cuối năm 1278 cho đến khi qua đời. .. </p>
+									<a href="#">Thêm</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="testimonals">
+            <img src="images/sentence.png"></img>
+						<a href="sentence.html"><h3>Danh Ngôn Lịch Sử</h3></a>
+					</div>
+          <div class="col-md-4 testimonals-row-column">
+            <div class="testimonals-details">
+              <p>"Nước Việt Nam là một, dân tộc Việt Nam là một; sông có thể cạn, núi có thể mòn, song chân lý ấy không bao giờ thay đổi."</p>
+            </div>
+            <p><span><a href="#">- Chủ tịch Hồ Chí Minh</a></span>. </p>
+          </div>
+
+			</div>
+		<!-- Contents ends here -->
+		<!-- Footer starts here-->
+		<div class="footer">
+			<div class="container">
+				<div class="row footer-row">
+          <div class="col-md-6 footer-row-left">
+						<div class="footer-menu">
+							<ul>
+                <li class="active"><a href="index.html">Trang chủ</a></li>
+                <li><a href="dateofhistory.html">Ngày này năm xưa</a></li>
+                <li><a href="periodhistory.html">Niên biểu LSVN</a></li>
+                <li><a href="listpost.html">Bài viết</a></li>
+                <li><a href="listvideo.html">Video</a></li>
+                <li><a href="sentence.html">Danh ngôn</a></li>
+                <li><a href="about.html">About</a></li>
+
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-3 footer-row-left">
+						<div class="social-media">
+							<a href="#"><i class="fa1"> </i></a>
+							<a href="#"><i class="fa2"> </i></a>
+							<a href="#"><i class="fa3"> </i></a>
+							<a href="#"><i class="fa4"> </i></a>
+							<a href="#"><i class="fa5"> </i></a>
+						</div>
+					</div>
+					<div class="col-md-3 footer-row-left">
+						<div class="email-info">
+							<input type="text"size="25px" value="vutoan266@gmail.com"  onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'info@companyname.com';}" style="margin-left: 10px" >
+						</div>
+					</div>
+
+					<div class="clearfix"></div>
+				</div>
+				 <p class="footer-row-para">2016 &copy; A product of <a href="fb.com/vutoan266">imVutoan</a></p>
+			</div>
+		</div>
+		<!-- Footer ends here-->
+
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Free Bizname Bootstrap Website Template | About :: w3layouts</title>
+<!-- Bootstrap link -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<!-- Bootstrap link  end-->
+<!-- CSS stylesheet -->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/input/demo.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/input/normalize.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/input/set1.css" type="text/css" media="all" />
+<!-- CSS stylesheet end-->
+ <!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+</script>
+<!-- Google fonts link start-->
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900,600italic' rel='stylesheet' type='text/css'>
+<!-- Google fonts ends -->
+<script src="js/jquery.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  var toggle = false;
+  $(window).click(function() {
+    var selectorToggleMenu = $('.slide-menu');
+    if(toggle){
+
+      selectorToggleMenu.addClass('animation-left');
+      $('body').removeClass('disabled-scroll');
+
+      setTimeout(function(){
+        selectorToggleMenu.addClass('hide-slide');
+        selectorToggleMenu.removeClass('animation-left');
+      }, 1000)
+
+    }
+  });
+
+  $('.toggleMenu').on('click',function(){
+    var selectorToggleMenu = $('.slide-menu');
+    if(selectorToggleMenu.hasClass('hide-slide')){
+      selectorToggleMenu.removeClass('hide-slide');
+      selectorToggleMenu.addClass('animation-right');
+      $('body').addClass('disabled-scroll');
+      toggle = true;
+      return false;
+    }
+  });
+
+  $('.slide-menu').click(function(event){
+      event.stopPropagation();
+  });
+
+});
+</script>
+
+</head>
+<body>
+	<!-- Header starts here -->
+		<div class="header">
+			<div class="container">
+				<div class="logo">
+					<a href="index.html"><img src="images/logo.png" /></a>
+				</div>
+				 <div class="menu">
+					<a class="toggleMenu" href="#"><img src="images/nav_icon.png" alt="" /> </a>
+					 </div>
+			</div>
+		</div>
+		<div class="slide-menu hide-slide">
+			<ul class="nav" id="nav">
+				<li><a href="index.html" class="scroll">Trang chủ</a></li>
+				<li><a href="dateofhistory.html" class="scroll">Ngày này năm xưa</a></li>
+				<li><a href="periodhistory.html" class="scroll">Niên biểu lịch sử Việt Nam</a></li>
+				<li><a href="listpost.html" class="scroll">Bài viết lịch sử</a></li>
+				<li><a href="listvideo.html" class="scroll">Video lịch sử</a></li>
+				<li><a href="sentence.html" class="scroll">Danh ngôn lịch sử</a></li>
+				<li class="current"><a href="about.html" class="scroll">About</a></li>
+			 </ul>
+			 <input class="input__field input__field--kyo" type="text" id="input-19" placeholder="Tìm kiếm"/>
+
+		</div>
+	<!-- Header ends here -->
+		<!-- Aboutus starrts here -->
+		<div class="about-us">
+			<div class="container">
+				<div class="row about-us-row">
+					<div class="col-md-8 about-us-column">
+						<center><h2>LỊCH SỬ VIỆT NAM</h2></center>
+						<div class="row few-words-row">
+							<div class="col-md-6 few-words-row-column">
+								<img src="images/logo0.png" />
+							</div>
+							<div class="col-md-6 few-words-row-column">
+								<h4>Thân chào quý đọc giả,</h4>
+								<p>Đây là website được  phát triển với mong muốn cung cấp thông tin lịch sử Việt Nam từ thời xa xưa đến nay.</p>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+				<div class="testimonals">
+						<h3>Trần Văn Vũ Toàn</h3>
+						<p>Student at University</p>
+						<p>of Information Technology</p>
+						<p>Mobile : 01689512120</p>
+						<p>Fb.com/vutoan266</p>
+					</div>
+
+				</div>
+			</div>
+			<br/>
+		<!-- Aboutus ends here -->
+		<!-- Footer starts here-->
+		<div class="footer">
+			<div class="container">
+				<div class="row footer-row">
+          <div class="col-md-6 footer-row-left">
+						<div class="footer-menu">
+							<ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="dateofhistory.html">Ngày này năm xưa</a></li>
+                <li><a href="periodhistory.html">Niên biểu LSVN</a></li>
+                <li><a href="listpost.html">Bài viết</a></li>
+                <li><a href="listvideo.html">Video</a></li>
+                <li><a href="sentence.html">Danh ngôn</a></li>
+                <li class="active"><a href="about.html">About</a></li>
+
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-3 footer-row-left">
+						<div class="social-media">
+							<a href="#"><i class="fa1"> </i></a>
+							<a href="#"><i class="fa2"> </i></a>
+							<a href="#"><i class="fa3"> </i></a>
+							<a href="#"><i class="fa4"> </i></a>
+							<a href="#"><i class="fa5"> </i></a>
+						</div>
+					</div>
+					<div class="col-md-3 footer-row-left">
+						<div class="email-info">
+							<input type="text"size="25px" value="vutoan266@gmail.com"  onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'info@companyname.com';}" style="margin-left: 10px" >
+						</div>
+					</div>
+
+					<div class="clearfix"></div>
+				</div>
+				 <p class="footer-row-para">2016 &copy; A product of <a href="fb.com/vutoan266">imVutoan</a></p>
+			</div>
+		</div>
+		<!-- Footer ends here-->
+
+</body>
+</html>

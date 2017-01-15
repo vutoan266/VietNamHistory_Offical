@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        font-family: "Raleway", sans-serif
+    }
+</style>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<!-- Bootstrap link  end-->
+<!-- CSS stylesheet -->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/loading.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/input/demo.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/input/normalize.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/input/set1.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/map.css" media="screen" title="no title">
+<link rel="stylesheet" href="http://storage.googleapis.com/code.getmdl.io/1.0.5/material.indigo-pink.min.css" media="screen" title="no title">
+<!-- Google fonts link start-->
+<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900,600italic" rel="stylesheet" type="text/css">
+<!-- Google fonts ends -->
+<script src=" js/jquery.min.js "></script>
+<!-- FlexSlider -->
+<script defer src="js/jquery.flexslider.js "></script>
+<script src="js/modernizr.js "></script>
+
+<script type="text/javascript ">
+    $(document).ready(function() {
+        var toggle = false;
+        $(window).click(function() {
+            var selectorToggleMenu = $('.slide-menu');
+            if (toggle) {
+
+                selectorToggleMenu.addClass('animation-left');
+                $('body').removeClass('disabled-scroll');
+
+                setTimeout(function() {
+                    selectorToggleMenu.addClass('hide-slide');
+                    selectorToggleMenu.removeClass('animation-left');
+                }, 1000)
+
+            }
+        });
+
+        $('.toggleMenu').on('click', function() {
+            var selectorToggleMenu = $('.slide-menu');
+            if (selectorToggleMenu.hasClass('hide-slide')) {
+                selectorToggleMenu.removeClass('hide-slide');
+                selectorToggleMenu.addClass('animation-right');
+                $('body').addClass('disabled-scroll');
+                toggle = true;
+                return false;
+            }
+        });
+
+        $('.slide-menu').click(function(event) {
+            event.stopPropagation();
+        });
+
+        $('.image-head-master img').on('click', function() {
+            var currentPos = $(this).attr('alt'),
+                content = '';
+            console.log(currentPos);
+            switch (currentPos) {
+                case '1':
+                    content = 'test';
+                    break;
+                default:
+                    content = currentPos;
+                    break;
+
+            }
+
+            $('.fab').addClass('active');
+            $('#overlay').addClass('dark-overlay');
+            $('.content-history').text(content);
+
+        });
+
+    });
+</script>
+
+<!-- <body class="w3-light-grey "> -->
+
+<body>
+    <div class="w3-content " style="max-width:1400px ">
+
+        <!-- Header starts here -->
+        <div class="header ">
+            <div class="container ">
+                <div class="logo ">
+                    <a href="index.html "><img src="images/logo.png " /></a>
+                </div>
+                <div class="menu ">
+                    <a class="toggleMenu " href="# "><img src="images/nav_icon.png " alt=" " /> </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide-menu hide-slide ">
+            <ul class="nav " id="nav ">
+                <li><a href="index.html " class="scroll ">Trang chủ</a></li>
+                <li><a href="dateofhistory.html " class="scroll ">Ngày này năm xưa</a></li>
+                <li><a href="periodhistory.html " class="scroll ">Niên biểu lịch sử Việt Nam</a></li>
+                <li class="current "><a href="listpost.html " class="scroll ">Bài viết lịch sử</a></li>
+                <li><a href="listvideo.html " class="scroll ">Video lịch sử</a></li>
+                <li><a href="sentence.html " class="scroll ">Danh ngôn lịch sử</a></li>
+                <li><a href="about.html " class="scroll ">About</a></li>
+            </ul>
+            <input class="input__field input__field--kyo " type="text " id="input-19 " placeholder="Tìm kiếm " />
+        </div>
+        <!-- Header ends here -->
+
+        <div class="container">
+            <div class="image-head-master">
+                <img style="margin-left: 82px;margin-top: 4px;" class="image-head" src="image/2.png" alt="2">
+                <img style="margin-left: 146px;margin-top: -6px;" class="image-head" src="image/1.png" alt="1">
+                <img style="margin-left: 132px;margin-top: 29px;" class="image-head" src="image/3.png" alt="3">
+                <img style="margin-left: 113px;margin-top: 62px;" class="image-head" src="image/4.png" alt="4">
+                <img style="margin-left: 144px;margin-top: 122px;" class="image-head" src="image/5.png" alt="5">
+                <img style="margin-left: 188px;margin-top: 175px;" class="image-head" src="image/6.png" alt="6">
+                <img style="margin-left: 250px;margin-top: 177px;" class="image-head" src="image/7.png" alt="7">
+                <img style="margin-left: 260px;margin-top: 286px;" class="image-head" src="image/9.png" alt="9">
+                <img style="margin-left: 194px;margin-top: 219px;" class="image-head" src="image/8.png" alt="8">
+                <img style="margin-left: 191px;margin-top: 272px;" class="image-head" src="image/10.png" alt="10">
+                <img style="margin-left: 144px;margin-top: 300px;" class="image-head" src="image/11.png" alt="11">
+                <img style="margin-left: 102px;margin-top: 335px;" class="image-head" src="image/12.png" alt="12">
+                <img style="margin-left: 53px;margin-top: 327px;" class="image-head" src="image/13.png" alt="13">
+            </div>
+        </div>
+
+        <div id="overlay"></div>
+        <div class="fab">
+            <form class="cntt-wrapper">
+                <div id="fab-hdr">
+                    <h3>Popup</h3>
+                </div>
+
+                <div class="cntt">
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                        <div class="content-history"></div>
+                    </div>
+                </div>
+
+                <div class="btn-wrapper">
+                    <button class="mdl-button mdl-js-button" id="cancel">Cancel</button>
+                    <button class="mdl-button mdl-js-button mdl-button--primary" id="submit">Submit</button>
+                </div>
+
+            </form>
+        </div>
+
+        <!-- Contents ends here -->
+
+        <!-- Footer starts here-->
+        <div class="footer " style="position: absolute;right: 0;bottom: -216px;left: 0;">
+            <div class="container ">
+                <div class="row footer-row ">
+                    <div class="col-md-6 footer-row-left ">
+                        <div class="footer-menu ">
+                            <ul>
+                                <li><a href="index.html ">Trang chủ</a></li>
+                                <li><a href="dateofhistory.html ">Ngày này năm xưa</a></li>
+                                <li><a href="periodhistory.html ">Niên biểu LSVN</a></li>
+                                <li class="active "><a href="listpost.html ">Bài viết</a></li>
+                                <li><a href="listvideo.html ">Video</a></li>
+                                <li><a href="sentence.html ">Danh ngôn</a></li>
+                                <li><a href="about.html ">About</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 footer-row-left ">
+                        <div class="social-media ">
+                            <a href="# "><i class="fa1 "> </i></a>
+                            <a href="# "><i class="fa2 "> </i></a>
+                            <a href="# "><i class="fa3 "> </i></a>
+                            <a href="# "><i class="fa4 "> </i></a>
+                            <a href="# "><i class="fa5 "> </i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 footer-row-left ">
+                        <div class="email-info ">
+                            <input type="text " size="25px " value="vutoan266@gmail.com " onfocus="this.value='' ; " onblur="if (this.value=='' ) {this.value='info@companyname.com' ;} " style="margin-left: 10px ">
+                        </div>
+                    </div>
+
+                    <div class="clearfix "></div>
+                </div>
+                <p class="footer-row-para ">2016 &copy; A product of <a href="fb.com/vutoan266 ">imVutoan</a></p>
+            </div>
+        </div>
+    </div>
+    <!-- Footer ends here-->
+</body>
+
+</html>
